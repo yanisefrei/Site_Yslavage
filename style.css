@@ -27,4 +27,11 @@ body {
                 url('image1.jpg');
     background-size: cover;
     background-blend-mode: overlay;
+    color : white;
+}
+
+.titre{
+    font-size: 50px;
+    text-align: center;
+    font-family: "lobster", sans-serif;
 }
