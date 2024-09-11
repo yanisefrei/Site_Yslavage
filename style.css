@@ -35,3 +35,34 @@ body {
     text-align: center;
     font-family: "lobster", sans-serif;
 }
+.btn{
+    background-color: #f8858562;
+    font-size: 15px;
+    color: #808083;
+    position: absolute;
+    bottom: 20px;       
+    right: 20px;        
+    padding: 10px 20px;
+}
+
+.text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px; /* Largeur de la bulle */
+        height: 150px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #f8858562;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 12px; /* Taille de la police */
+        box-sizing: border-box;
+}
