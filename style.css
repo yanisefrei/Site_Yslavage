@@ -1,68 +1,195 @@
+/* Importation du fichier header.css */
 @import "./header.css";
 
+/* Styles de base */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-ul,
-li {
-	list-style: none;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-a:hover {
-	color: red;
-}
 body {
-    background-image: url('image1.jpg');
-    background-size: cover;
-    background-position: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('image1.jpg');
-    background-size: cover;
-    background-blend-mode: overlay;
-    color : white;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Fond blanc */
+    color: black; /* Texte noir */
 }
 
-.titre{
+header {
+    background-color: #ffffff; /* Fond blanc pour le header */
+    padding: 1em;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1em;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255); /* Texte noir pour les liens */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-reservation {
+    background-color: #000000; /* Fond noir pour le bouton réservation */
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.hero {
+
+    padding: 50px;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: black; /* Texte noir */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
     font-size: 50px;
-    text-align: center;
-    font-family: "lobster", sans-serif;
-}
-.btn{
-    background-color: #f8858562;
-    font-size: 15px;
-    color: #808083;
-    position: absolute;
-    bottom: 20px;       
-    right: 20px;        
-    padding: 10px 20px;
 }
 
-.text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 300px; /* Largeur de la bulle */
-        height: 150px;
-        padding: 20px;
-        border-radius: 20px;
-        background-color: #f8858562;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-size: 12px; /* Taille de la police */
-        box-sizing: border-box;
+.hero .btn {
+    background-color: #f88585; /* Bouton rose pâle */
+    color: white; /* Texte blanc */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 60px; /* Ajustement pour le descendre légèrement */
+}
+
+.services {
+    padding: 50px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: white; /* Fond blanc */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 30%;
+    border-radius: 10px;
+    color: black; /* Texte noir */
+}
+
+/* Localisation */
+.localisation {
+    padding: 50px;
+    background-color: #f4f4f4; /* Fond gris très clair */
+    color: black; /* Texte noir */
+    text-align: center;
+}
+
+.map-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: black; /* Fond noir pour encadrer la carte */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+footer {
+    background-color: #100404;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer .social-media img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Styles pour la galerie d'images */
+.gallery-section {
+    padding: 50px;
+    text-align: center;
+    background-color: white; /* Fond blanc */
+}
+
+.gallery-section h1 {
+    font-size: 36px;
+    color: black; /* Titre noir */
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+/* Transitions et animations */
+.btn:hover {
+    background-color: #ff9999;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.service-cards .card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+/* Section FAQ avec accordéon */
+.faq-section {
+    padding: 50px;
+    background-color: white; /* Fond blanc */
+    color: black; /* Texte noir */
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    color: black; /* Titre noir pour la FAQ */
+    margin-bottom: 5px;
+}
+
+.faq-item p {
+    display: none;
+    font-size: 16px;
+    color: black; /* Texte noir */
+}
+
+.faq-item.open p {
+    display: block;
 }

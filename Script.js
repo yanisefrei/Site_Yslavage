@@ -9,3 +9,4 @@ function handleClick(e){
 
 //rajouter un click event 
 btn.addEventListener("click", handleClick)
+

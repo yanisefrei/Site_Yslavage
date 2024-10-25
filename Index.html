@@ -3,34 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Test</title>
+    <title>YS.Lavage - Accueil</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header class="header">
-        <nav>
-            <a  href="#">
-                <img src="./image1.jpg" alt="Icone">
-                
-            </a>
-            <li><a href="prix.html"> Prix</a></li>
-			<li><a href="#"> Image </a></li>
-			<li><a href="#"> Contact </a></li>
+        <nav class="navbar">
+            <a href="index.html"><img src="/image3.jpg" alt="Logo YS.Lavage" class="logo"></a> <!-- Logo ramène à l'accueil -->
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="prix.html">Prix</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservation.html" class="btn-reservation">Prendre rendez-vous</a></li>
+            </ul>
         </nav>
     </header>
+    
     <main>
-        <p class="titre">Ys.Lavage</p>
-        <button class="btn" id="btn">Google</button>
-        <ul class = "text"> 
-            <li>🚗✨ Redonnez de l’éclat à votre voiture avec nos lavages professionnels ! ✨🚗
+        <section class="hero">
+            <h1>Bienvenue chez YS.Lavage</h1>
+            <p>Le meilleur service de lavage de véhicules dans votre région !</p>
+            <a href="reservation.html" class="btn">Réservez maintenant</a> <!-- Bouton descendu légèrement -->
+        </section>
 
-                Votre véhicule mérite le meilleur ! Faites confiance à notre équipe d'experts pour un lavage complet qui ravivera la beauté de votre voiture. Nous offrons des services de nettoyage intérieurs et extérieurs de haute qualité, utilisant des produits respectueux de l'environnement et adaptés à chaque type de véhicule.
-                
-            </li>
-            
-        </ul>
+        <section class="services">
+            <h2>Nos Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Lavage intérieur</h3>
+                    <p>Nettoyage approfondi de l'intérieur de votre véhicule.</p>
+                </div>
+                <div class="card">
+                    <h3>Lavage extérieur</h3>
+                    <p>Redonnez un éclat neuf à votre véhicule grâce à notre lavage extérieur.</p>
+                </div>
+                <div class="card">
+                    <h3>Polissage et cire</h3>
+                    <p>Protégez votre véhicule avec notre traitement de polissage et cire.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="localisation">
+            <h2>Où nous trouver ?</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dXXXXXXX!2dXXX!3dXXX!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xXXXXXXXXXXXXXX%3A0xXXXXXXXXXXXXXX!2sYS.Lavage!5e0!3m2!1sfr!2s!4vXXXXXXXXXXX" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+            </div>
+        </section>
     </main>
-    <footer></footer>
-    <script src="./Script.js"></script>
+
+    <footer>
+        <p>© 2024 YS.Lavage - Tous droits réservés</p>
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
 </body>
 </html>
+
+
+
+
+
